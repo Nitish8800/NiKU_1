@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#outer{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(20, 154, 199);
+}
+
+
+#out{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+   
+}
+#inn{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: rgba(15, 70, 223, 0.918);
+}
+
+#inner{
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: rgb(219, 64, 25);
+}
+
+.nik{
+color: yellow;
+background-color: tomato;
+}
+
+.xyz{
+    background-color: rgb(3, 25, 66);
+}
+.efg{
+    border:10px dotted rgb(105, 48, 8);
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="outer">
+    <h2>Outer</h2>
+    <div id="inner">
+<h2>Inner</h2>
+    </div>
+
+
+
+    <div id="out" class="nik xyz efg">
+        <h1>Nitish</h1>
+        <h2>Out</h2>
+        <div id="inn">
+    <h2>Inn</h2>
+        </div>
+    
+</div>
+
+    
+
+    
+</body>
+</html>
+
+<script>
+
+// document.querySelector("#inner").addEventListener('click',function(){
+//     alert('Inner Div');
+// },false);
+
+// document.querySelector("#outer").addEventListener('click',function(){
+//     alert('Outer Div');
+// },false);
+
+
+
+
+
+// document.getElementById("outer").addEventListener("click",abc);
+
+// function abc(){
+//     document.getElementById("outer").style.background = "green";
+// }
+
+
+
+
+
+// document.getElementById("outer").addEventListener("mouseleave",abc);
+
+// function abc(){
+//     document.getElementById("outer").style.background = "green";
+// }
+
+
+
+// document.getElementById("outer").addEventListener("mouseleave",abc);
+
+// document.getElementById("outer").addEventListener("click",xyz);
+
+// function abc(){
+//     document.getElementById("outer").style.background = "green";
+// }
+
+// function xyz(){
+//     document.getElementById("outer").removeEventListener("mouseleave",abc)
+// }
+
+
+
+// document.getElementById("out").onclick=abc
+// function abc(){
+//     document.getElementById("out").style.background = "green";
+// }
+
+
+
+// document.getElementById("out").addEventListener("click",abc)
+// function abc(){
+//     document.getElementById("out").style.background = "orange";
+// }
+
+
+
+// document.getElementById("out").addEventListener("mouseenter",abc)
+// document.getElementById("inn").addEventListener("dblclick",function(){
+//     document.getElementById("inn").style.border = "10px solid yellow"
+// })
+// function abc(){
+//     document.getElementById("out").style.background = "orange";
+// }
+
+
+
+//  document.getElementById("out").addEventListener("click",abc);
+
+// function abc(){
+//    
+
+//     document.getElementById("out").classList.remove("xyz");
+// }
+
+
+
+
+
+
+//  document.getElementById("out").addEventListener("click",abc);
+
+// function abc(){
+
+//     document.getElementById("out").classList.toggle("xyz");
+
+//    var a = document.getElementById("out").classList;
+//     console.log(a)
+// }
+
+
+
+
+// document.getElementById("out").addEventListener("click",abc);
+
+// function abc(){
+
+//     var a = document.getElementById("out").classList.item(0);
+//     console.log(a)
+// }
+
+
+document.getElementById("out").addEventListener("click",abc);
+
+function abc(){
+
+    var a = document.getElementById("out").classList.contains("nik");
+    console.log(a)
+}
+
+
+</script>
